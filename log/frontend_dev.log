@@ -4796,3 +4796,979 @@ Jan 18 20:31:02 symfony [info] {sfWebDebugLogger} Factories 27.45 ms (1)
 Jan 18 20:31:02 symfony [info] {sfWebDebugLogger} Action "job/index" 29.14 ms (1)
 Jan 18 20:31:02 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 29.45 ms (1)
 Jan 18 20:31:02 symfony [info] {sfWebResponse} Send content (49207 o)
+Jan 18 20:57:56 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 20:57:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 20:57:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 20:57:56 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 20:57:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 20:57:56 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 20:57:56' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 20:57:56 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 20:57:56 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 20:57:56' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 20:57:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 20:57:56'
+Jan 18 20:57:56 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 20:57:56' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 20:57:56 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 20:57:56'
+Jan 18 20:57:56 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 20:57:56 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 20:57:56 symfony [info] {main} Get slot "title"
+Jan 18 20:57:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 20:57:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 20:57:56 symfony [info] {sfWebDebugLogger} Configuration 7.27 ms (9)
+Jan 18 20:57:56 symfony [info] {sfWebDebugLogger} Factories 23.96 ms (1)
+Jan 18 20:57:56 symfony [info] {sfWebDebugLogger} Action "job/index" 19.86 ms (1)
+Jan 18 20:57:56 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 30.38 ms (1)
+Jan 18 20:57:56 symfony [info] {sfWebResponse} Send content (49219 o)
+Jan 18 21:12:43 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jan 18 21:12:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:12:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:12:43 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:12:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:12:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:12:43' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:12:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:12:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:12:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:43'
+Jan 18 21:12:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:12:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:43'
+Jan 18 21:12:43 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:43 symfony [info] {main} Get slot "title"
+Jan 18 21:12:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:12:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:12:43 symfony [info] {sfWebDebugLogger} Configuration 10.88 ms (9)
+Jan 18 21:12:43 symfony [info] {sfWebDebugLogger} Factories 40.36 ms (1)
+Jan 18 21:12:43 symfony [info] {sfWebDebugLogger} Action "job/index" 26.79 ms (1)
+Jan 18 21:12:43 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 35.55 ms (1)
+Jan 18 21:12:43 symfony [info] {sfWebResponse} Send content (49279 o)
+Jan 18 21:12:48 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category" (/).
+Jan 18 21:12:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:12:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:12:48 symfony [info] {sfWebDebugLogger} Configuration 3.04 ms (5)
+Jan 18 21:12:48 symfony [info] {sfWebDebugLogger} Factories 18.07 ms (1)
+Jan 18 21:12:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:12:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:12:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:12:52 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:12:52 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52'
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52'
+Jan 18 21:12:52 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:52 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:52 symfony [info] {main} Get slot "title"
+Jan 18 21:12:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:12:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} Configuration 6.73 ms (9)
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} Factories 21.77 ms (1)
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} Action "job/index" 17.92 ms (1)
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 21.45 ms (1)
+Jan 18 21:12:52 symfony [info] {sfWebResponse} Send content (49118 o)
+Jan 18 21:12:52 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:12:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:12:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:12:52 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:12:52 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52'
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:12:52 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:12:52'
+Jan 18 21:12:52 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:52 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:52 symfony [info] {main} Get slot "title"
+Jan 18 21:12:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:12:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} Configuration 7.05 ms (9)
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} Factories 33.05 ms (1)
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} Action "job/index" 25.18 ms (1)
+Jan 18 21:12:52 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 19.47 ms (1)
+Jan 18 21:12:52 symfony [info] {sfWebResponse} Send content (49119 o)
+Jan 18 21:12:57 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/company-109/paris-france/10/skills-in-photoshop with parameters array (  'module' => 'job',  'action' => 'show',  'company_slug' => 'company-109',  'location_slug' => 'paris-france',  'id' => '10',  'position_slug' => 'skills-in-photoshop',)
+Jan 18 21:12:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:12:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:12:57 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 18 21:12:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:12:57 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='10' LIMIT 1
+Jan 18 21:12:57 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Jan 18 21:12:57 symfony [info] {main} Set slot "title"
+Jan 18 21:12:57 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:57 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:12:57 symfony [info] {main} Get slot "title"
+Jan 18 21:12:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:12:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:12:57 symfony [info] {sfWebDebugLogger} Configuration 7.44 ms (9)
+Jan 18 21:12:57 symfony [info] {sfWebDebugLogger} Factories 19.33 ms (1)
+Jan 18 21:12:57 symfony [info] {sfWebDebugLogger} Action "job/show" 27.38 ms (1)
+Jan 18 21:12:57 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 17.51 ms (1)
+Jan 18 21:12:57 symfony [info] {sfWebResponse} Send content (35925 o)
+Jan 18 21:18:59 symfony [info] {sfPatternRouting} Match route "job_show_user" (/job/:company_slug/:location_slug/:id/:position_slug) for /job/company-109/paris-france/10/skills-in-photoshop with parameters array (  'module' => 'job',  'action' => 'show',  'company_slug' => 'company-109',  'location_slug' => 'paris-france',  'id' => '10',  'position_slug' => 'skills-in-photoshop',)
+Jan 18 21:18:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:18:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:18:59 symfony [info] {jobActions} Call "jobActions->executeShow()"
+Jan 18 21:18:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:18:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.ID='10' LIMIT 1
+Jan 18 21:18:59 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/showSuccess.php"
+Jan 18 21:18:59 symfony [info] {main} Set slot "title"
+Jan 18 21:18:59 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:18:59 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:18:59 symfony [info] {main} Get slot "title"
+Jan 18 21:18:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:18:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:18:59 symfony [info] {sfWebDebugLogger} Configuration 9.78 ms (9)
+Jan 18 21:18:59 symfony [info] {sfWebDebugLogger} Factories 26.28 ms (1)
+Jan 18 21:18:59 symfony [info] {sfWebDebugLogger} Action "job/show" 16.26 ms (1)
+Jan 18 21:18:59 symfony [info] {sfWebDebugLogger} View "Success" for "job/show" 11.25 ms (1)
+Jan 18 21:18:59 symfony [info] {sfWebResponse} Send content (35957 o)
+Jan 18 21:19:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:19:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:19:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:19:01 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:19:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:19:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:19:01' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:19:01 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:19:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:01' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:01 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:01'
+Jan 18 21:19:01 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:01' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:01 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:01 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:01'
+Jan 18 21:19:01 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:01 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:01 symfony [info] {main} Get slot "title"
+Jan 18 21:19:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:19:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:19:01 symfony [info] {sfWebDebugLogger} Configuration 12.39 ms (9)
+Jan 18 21:19:01 symfony [info] {sfWebDebugLogger} Factories 40.15 ms (1)
+Jan 18 21:19:01 symfony [info] {sfWebDebugLogger} Action "job/index" 18.64 ms (1)
+Jan 18 21:19:01 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 32.01 ms (1)
+Jan 18 21:19:01 symfony [info] {sfWebDebugLogger} Partial "job/_list" 9.48 ms (2)
+Jan 18 21:19:01 symfony [info] {sfWebResponse} Send content (48223 o)
+Jan 18 21:19:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:19:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:19:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:19:07 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:19:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07'
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07'
+Jan 18 21:19:07 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:07 symfony [info] {main} Get slot "title"
+Jan 18 21:19:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:19:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Configuration 11.48 ms (9)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Factories 39.57 ms (1)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Action "job/index" 20.36 ms (1)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 27.00 ms (1)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.49 ms (2)
+Jan 18 21:19:07 symfony [info] {sfWebResponse} Send content (48255 o)
+Jan 18 21:19:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:19:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:19:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:19:07 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:19:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07'
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:07'
+Jan 18 21:19:07 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:07 symfony [info] {main} Get slot "title"
+Jan 18 21:19:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:19:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Configuration 17.64 ms (9)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Factories 62.88 ms (1)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Action "job/index" 40.95 ms (1)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 67.34 ms (1)
+Jan 18 21:19:07 symfony [info] {sfWebDebugLogger} Partial "job/_list" 17.19 ms (2)
+Jan 18 21:19:08 symfony [info] {sfWebResponse} Send content (48256 o)
+Jan 18 21:19:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:19:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:19:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:19:10 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:19:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:19:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:19:10' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:19:10 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:19:10 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:10' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:10 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:10'
+Jan 18 21:19:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:10' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:10 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:10'
+Jan 18 21:19:10 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:10 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:10 symfony [info] {main} Get slot "title"
+Jan 18 21:19:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:19:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:19:10 symfony [info] {sfWebDebugLogger} Configuration 6.77 ms (9)
+Jan 18 21:19:10 symfony [info] {sfWebDebugLogger} Factories 25.82 ms (1)
+Jan 18 21:19:10 symfony [info] {sfWebDebugLogger} Action "job/index" 24.31 ms (1)
+Jan 18 21:19:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 24.97 ms (1)
+Jan 18 21:19:10 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.24 ms (2)
+Jan 18 21:19:10 symfony [info] {sfWebResponse} Send content (48254 o)
+Jan 18 21:19:14 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:19:14 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:19:14 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:19:14 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:19:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:19:15 symfony [debug] {sfPropelLogger} time:  0.005 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:19:15' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:19:15 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:19:15 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:15' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:15 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:15'
+Jan 18 21:19:15 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:15' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:19:15 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:19:15 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:19:15'
+Jan 18 21:19:15 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:15 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:19:15 symfony [info] {main} Get slot "title"
+Jan 18 21:19:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:19:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:19:15 symfony [info] {sfWebDebugLogger} Configuration 20.77 ms (9)
+Jan 18 21:19:15 symfony [info] {sfWebDebugLogger} Factories 44.92 ms (1)
+Jan 18 21:19:15 symfony [info] {sfWebDebugLogger} Action "job/index" 25.34 ms (1)
+Jan 18 21:19:15 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 38.12 ms (1)
+Jan 18 21:19:15 symfony [info] {sfWebDebugLogger} Partial "job/_list" 9.69 ms (2)
+Jan 18 21:19:15 symfony [info] {sfWebResponse} Send content (47833 o)
+Jan 18 21:20:19 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category/" (/).
+Jan 18 21:20:19 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:20:19 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:20:19 symfony [info] {sfWebDebugLogger} Configuration 5.58 ms (5)
+Jan 18 21:20:19 symfony [info] {sfWebDebugLogger} Factories 24.74 ms (1)
+Jan 18 21:21:03 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category/" (/).
+Jan 18 21:21:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:21:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:21:03 symfony [info] {sfWebDebugLogger} Configuration 5.14 ms (5)
+Jan 18 21:21:03 symfony [info] {sfWebDebugLogger} Factories 23.84 ms (1)
+Jan 18 21:21:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:21:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:21:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:21:09 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:21:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:21:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:21:09' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:21:09 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:21:09 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:09' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:21:09 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:21:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:09'
+Jan 18 21:21:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:09' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:21:09 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:21:09 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:09'
+Jan 18 21:21:09 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:21:09 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:21:09 symfony [info] {main} Get slot "title"
+Jan 18 21:21:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:21:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:21:09 symfony [info] {sfWebDebugLogger} Configuration 8.64 ms (9)
+Jan 18 21:21:09 symfony [info] {sfWebDebugLogger} Factories 40.20 ms (1)
+Jan 18 21:21:09 symfony [info] {sfWebDebugLogger} Action "job/index" 17.22 ms (1)
+Jan 18 21:21:09 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 25.36 ms (1)
+Jan 18 21:21:09 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.38 ms (2)
+Jan 18 21:21:09 symfony [info] {sfWebResponse} Send content (48041 o)
+Jan 18 21:21:11 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:21:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:21:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:21:11 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:21:11 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:21:11 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:21:11' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:21:11 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:21:11 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:11' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:21:11 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:21:11 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:11'
+Jan 18 21:21:11 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:11' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:21:11 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:21:11 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:21:11'
+Jan 18 21:21:11 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:21:11 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:21:11 symfony [info] {main} Get slot "title"
+Jan 18 21:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:21:11 symfony [info] {sfWebDebugLogger} Configuration 9.26 ms (9)
+Jan 18 21:21:11 symfony [info] {sfWebDebugLogger} Factories 22.62 ms (1)
+Jan 18 21:21:11 symfony [info] {sfWebDebugLogger} Action "job/index" 32.97 ms (1)
+Jan 18 21:21:11 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 42.62 ms (1)
+Jan 18 21:21:11 symfony [info] {sfWebDebugLogger} Partial "job/_list" 10.07 ms (2)
+Jan 18 21:21:11 symfony [info] {sfWebResponse} Send content (48044 o)
+Jan 18 21:36:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:36:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:36:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:36:34 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:36:34 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:36:34 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.0 MB | mempeak:    4.0 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:36:34' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:36:59 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:36:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:36:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:36:59 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:36:59 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:36:59 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:36:59' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:36:59 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:36:59 symfony [err] {sfException} Call to undefined method BaseJobeetCategory::getActiveJobsCriteria
+Jan 18 21:36:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 18 21:36:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:36:59 symfony [info] {sfWebDebugLogger} Configuration 8.24 ms (9)
+Jan 18 21:36:59 symfony [info] {sfWebDebugLogger} Factories 23.66 ms (1)
+Jan 18 21:36:59 symfony [info] {sfWebDebugLogger} Action "job/index" 32.41 ms (1)
+Jan 18 21:36:59 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 55.00 ms (1)
+Jan 18 21:39:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:39:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:39:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:39:10 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:39:10 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:39:10 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:39:10' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:39:10 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:39:10 symfony [err] {sfException} Call to undefined method BaseJobeetCategory::getActiveJobsCriteria
+Jan 18 21:39:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 18 21:39:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:39:10 symfony [info] {sfWebDebugLogger} Configuration 10.07 ms (9)
+Jan 18 21:39:10 symfony [info] {sfWebDebugLogger} Factories 34.97 ms (1)
+Jan 18 21:39:10 symfony [info] {sfWebDebugLogger} Action "job/index" 26.55 ms (1)
+Jan 18 21:39:10 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 40.98 ms (1)
+Jan 18 21:40:06 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:40:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:40:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:40:06 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:40:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:40:06 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:40:06' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:40:06 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:40:06 symfony [err] {sfException} Call to undefined method BaseJobeetCategory::getActiveJobsCriteria
+Jan 18 21:40:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+Jan 18 21:40:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:40:06 symfony [info] {sfWebDebugLogger} Configuration 9.18 ms (9)
+Jan 18 21:40:06 symfony [info] {sfWebDebugLogger} Factories 32.95 ms (1)
+Jan 18 21:40:06 symfony [info] {sfWebDebugLogger} Action "job/index" 25.29 ms (1)
+Jan 18 21:40:06 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 39.51 ms (1)
+Jan 18 21:42:03 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:42:03 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:42:03 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:42:03 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:42:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:42:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:42:03' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:42:03 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:42:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:42:03' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:42:03 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:42:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:42:03'
+Jan 18 21:42:03 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:42:03' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:42:03 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:42:03 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:42:03'
+Jan 18 21:42:03 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:42:03 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:42:03 symfony [info] {main} Get slot "title"
+Jan 18 21:42:03 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:42:03 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:42:03 symfony [info] {sfWebDebugLogger} Configuration 12.04 ms (9)
+Jan 18 21:42:03 symfony [info] {sfWebDebugLogger} Factories 39.60 ms (1)
+Jan 18 21:42:03 symfony [info] {sfWebDebugLogger} Action "job/index" 13.96 ms (1)
+Jan 18 21:42:03 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 24.61 ms (1)
+Jan 18 21:42:03 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.00 ms (2)
+Jan 18 21:42:03 symfony [info] {sfWebResponse} Send content (48104 o)
+Jan 18 21:45:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:20 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:20 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:20 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:20' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:20 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:20 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:20' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:20 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:20 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:20'
+Jan 18 21:45:20 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:20' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:20 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:20 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:20'
+Jan 18 21:45:20 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:20 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:20 symfony [info] {main} Get slot "title"
+Jan 18 21:45:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:20 symfony [info] {sfWebDebugLogger} Configuration 16.35 ms (9)
+Jan 18 21:45:20 symfony [info] {sfWebDebugLogger} Factories 39.12 ms (1)
+Jan 18 21:45:20 symfony [info] {sfWebDebugLogger} Action "job/index" 19.45 ms (1)
+Jan 18 21:45:20 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 23.89 ms (1)
+Jan 18 21:45:20 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.40 ms (2)
+Jan 18 21:45:20 symfony [info] {sfWebResponse} Send content (48106 o)
+Jan 18 21:45:21 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:21 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:21 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:21' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:21 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:21' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:21 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:21 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:21'
+Jan 18 21:45:21 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:21' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:21 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:21 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:21'
+Jan 18 21:45:21 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:21 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:21 symfony [info] {main} Get slot "title"
+Jan 18 21:45:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:21 symfony [info] {sfWebDebugLogger} Configuration 13.13 ms (9)
+Jan 18 21:45:21 symfony [info] {sfWebDebugLogger} Factories 27.87 ms (1)
+Jan 18 21:45:21 symfony [info] {sfWebDebugLogger} Action "job/index" 27.47 ms (1)
+Jan 18 21:45:21 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 30.93 ms (1)
+Jan 18 21:45:21 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.59 ms (2)
+Jan 18 21:45:21 symfony [info] {sfWebResponse} Send content (48106 o)
+Jan 18 21:45:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {main} Get slot "title"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Configuration 10.76 ms (9)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Factories 25.95 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Action "job/index" 18.77 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 24.89 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Partial "job/_list" 5.52 ms (2)
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send content (48105 o)
+Jan 18 21:45:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {main} Get slot "title"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Configuration 7.30 ms (9)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Factories 21.46 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Action "job/index" 25.67 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 23.44 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.84 ms (2)
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send content (48103 o)
+Jan 18 21:45:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {main} Get slot "title"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Configuration 8.30 ms (9)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Factories 22.57 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Action "job/index" 21.70 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 36.94 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Partial "job/_list" 8.19 ms (2)
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send content (48104 o)
+Jan 18 21:45:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:23 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23'
+Jan 18 21:45:23 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:23 symfony [info] {main} Get slot "title"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Configuration 9.26 ms (9)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Factories 27.39 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Action "job/index" 19.62 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 25.29 ms (1)
+Jan 18 21:45:23 symfony [info] {sfWebDebugLogger} Partial "job/_list" 5.63 ms (2)
+Jan 18 21:45:23 symfony [info] {sfWebResponse} Send content (48104 o)
+Jan 18 21:45:23 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:23 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:23 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:23' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:24 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:24 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:24' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:24 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:24'
+Jan 18 21:45:24 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:24' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:24 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:24 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:24'
+Jan 18 21:45:24 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:24 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:24 symfony [info] {main} Get slot "title"
+Jan 18 21:45:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:24 symfony [info] {sfWebDebugLogger} Configuration 11.90 ms (9)
+Jan 18 21:45:24 symfony [info] {sfWebDebugLogger} Factories 27.59 ms (1)
+Jan 18 21:45:24 symfony [info] {sfWebDebugLogger} Action "job/index" 32.19 ms (1)
+Jan 18 21:45:24 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 40.57 ms (1)
+Jan 18 21:45:24 symfony [info] {sfWebDebugLogger} Partial "job/_list" 8.94 ms (2)
+Jan 18 21:45:24 symfony [info] {sfWebResponse} Send content (48105 o)
+Jan 18 21:45:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:57 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:57' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:57 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:57 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:57' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:57 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:57'
+Jan 18 21:45:57 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:57' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:57 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:57 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:57'
+Jan 18 21:45:57 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:57 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:57 symfony [info] {main} Get slot "title"
+Jan 18 21:45:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:57 symfony [info] {sfWebDebugLogger} Configuration 10.21 ms (9)
+Jan 18 21:45:57 symfony [info] {sfWebDebugLogger} Factories 32.26 ms (1)
+Jan 18 21:45:57 symfony [info] {sfWebDebugLogger} Action "job/index" 16.46 ms (1)
+Jan 18 21:45:57 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 25.89 ms (1)
+Jan 18 21:45:57 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.74 ms (2)
+Jan 18 21:45:57 symfony [info] {sfWebResponse} Send content (48105 o)
+Jan 18 21:45:58 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:45:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:45:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:45:58 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:45:58 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:45:58 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:45:58' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:45:58 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:45:58 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:58' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:58 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:58 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:58'
+Jan 18 21:45:58 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:58' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:45:58 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:45:58 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:45:58'
+Jan 18 21:45:58 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:58 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:45:58 symfony [info] {main} Get slot "title"
+Jan 18 21:45:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:45:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:45:58 symfony [info] {sfWebDebugLogger} Configuration 9.71 ms (9)
+Jan 18 21:45:58 symfony [info] {sfWebDebugLogger} Factories 29.54 ms (1)
+Jan 18 21:45:58 symfony [info] {sfWebDebugLogger} Action "job/index" 21.23 ms (1)
+Jan 18 21:45:58 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 44.27 ms (1)
+Jan 18 21:45:58 symfony [info] {sfWebDebugLogger} Partial "job/_list" 11.35 ms (2)
+Jan 18 21:45:58 symfony [info] {sfWebResponse} Send content (48105 o)
+Jan 18 21:46:49 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:46:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:46:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:46:49 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:46:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:46:49 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:46:49' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:46:49 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:46:49 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:49' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:49 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:49'
+Jan 18 21:46:49 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:49' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:49 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:49 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:49'
+Jan 18 21:46:49 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:49 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:49 symfony [info] {main} Get slot "title"
+Jan 18 21:46:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:46:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:46:49 symfony [info] {sfWebDebugLogger} Configuration 14.70 ms (9)
+Jan 18 21:46:49 symfony [info] {sfWebDebugLogger} Factories 50.11 ms (1)
+Jan 18 21:46:49 symfony [info] {sfWebDebugLogger} Action "job/index" 34.75 ms (1)
+Jan 18 21:46:49 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 35.05 ms (1)
+Jan 18 21:46:49 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.69 ms (2)
+Jan 18 21:46:49 symfony [info] {sfWebResponse} Send content (48105 o)
+Jan 18 21:46:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:46:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:46:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:46:51 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:46:51 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:51 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51'
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:51 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51'
+Jan 18 21:46:51 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:51 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:51 symfony [info] {main} Get slot "title"
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Configuration 22.39 ms (9)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Factories 71.15 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Action "job/index" 31.52 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 38.52 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 13.84 ms (2)
+Jan 18 21:46:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send content (48106 o)
+Jan 18 21:46:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:46:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:46:51 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:46:51 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:51 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51'
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:51 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51'
+Jan 18 21:46:51 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:51 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:51 symfony [info] {main} Get slot "title"
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Configuration 9.42 ms (9)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Factories 52.02 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Action "job/index" 14.88 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 21.96 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 5.61 ms (2)
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send content (48104 o)
+Jan 18 21:46:51 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:46:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:46:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:46:51 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:46:51 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:51 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51'
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:46:51 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:46:51 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:46:51'
+Jan 18 21:46:51 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:51 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:46:51 symfony [info] {main} Get slot "title"
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Configuration 9.91 ms (9)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Factories 23.25 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Action "job/index" 28.47 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 39.37 ms (1)
+Jan 18 21:46:51 symfony [info] {sfWebDebugLogger} Partial "job/_list" 8.82 ms (2)
+Jan 18 21:46:51 symfony [info] {sfWebResponse} Send content (48104 o)
+Jan 18 21:47:04 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category" (/).
+Jan 18 21:47:04 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:47:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:04 symfony [info] {sfWebDebugLogger} Configuration 3.55 ms (5)
+Jan 18 21:47:04 symfony [info] {sfWebDebugLogger} Factories 19.92 ms (1)
+Jan 18 21:47:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:47:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:07 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07'
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07'
+Jan 18 21:47:07 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:07 symfony [info] {main} Get slot "title"
+Jan 18 21:47:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Configuration 10.64 ms (9)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Factories 33.69 ms (1)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Action "job/index" 21.81 ms (1)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 28.55 ms (1)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.38 ms (2)
+Jan 18 21:47:07 symfony [info] {sfWebResponse} Send content (48073 o)
+Jan 18 21:47:07 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:47:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:07 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07'
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:07 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:07 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:07'
+Jan 18 21:47:07 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:07 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:07 symfony [info] {main} Get slot "title"
+Jan 18 21:47:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Configuration 7.90 ms (9)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Factories 25.95 ms (1)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Action "job/index" 15.24 ms (1)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 22.75 ms (1)
+Jan 18 21:47:07 symfony [info] {sfWebDebugLogger} Partial "job/_list" 5.84 ms (2)
+Jan 18 21:47:07 symfony [info] {sfWebResponse} Send content (48071 o)
+Jan 18 21:47:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:47:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:39 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:39 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:39' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:39 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:39' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:39 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:39'
+Jan 18 21:47:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:39' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:39 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:39 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:39'
+Jan 18 21:47:39 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:39 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:39 symfony [info] {main} Get slot "title"
+Jan 18 21:47:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:39 symfony [info] {sfWebDebugLogger} Configuration 22.46 ms (9)
+Jan 18 21:47:39 symfony [info] {sfWebDebugLogger} Factories 43.92 ms (1)
+Jan 18 21:47:39 symfony [info] {sfWebDebugLogger} Action "job/index" 25.43 ms (1)
+Jan 18 21:47:39 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 50.72 ms (1)
+Jan 18 21:47:39 symfony [info] {sfWebDebugLogger} Partial "job/_list" 13.80 ms (2)
+Jan 18 21:47:39 symfony [info] {sfWebResponse} Send content (48107 o)
+Jan 18 21:47:41 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:47:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:41 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:41' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:41 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:41 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:41' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:41 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:41'
+Jan 18 21:47:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:41' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:41 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:41 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:41'
+Jan 18 21:47:41 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:41 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:41 symfony [info] {main} Get slot "title"
+Jan 18 21:47:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:41 symfony [info] {sfWebDebugLogger} Configuration 12.07 ms (9)
+Jan 18 21:47:41 symfony [info] {sfWebDebugLogger} Factories 25.55 ms (1)
+Jan 18 21:47:41 symfony [info] {sfWebDebugLogger} Action "job/index" 16.13 ms (1)
+Jan 18 21:47:41 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 25.18 ms (1)
+Jan 18 21:47:41 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.43 ms (2)
+Jan 18 21:47:41 symfony [info] {sfWebResponse} Send content (48106 o)
+Jan 18 21:47:42 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:47:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:42 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:42 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:42' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:42 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:42 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:42' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:42 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:42'
+Jan 18 21:47:42 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:42' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:42 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:42 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:42'
+Jan 18 21:47:42 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:42 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:42 symfony [info] {main} Get slot "title"
+Jan 18 21:47:42 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:42 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:42 symfony [info] {sfWebDebugLogger} Configuration 8.72 ms (9)
+Jan 18 21:47:42 symfony [info] {sfWebDebugLogger} Factories 25.76 ms (1)
+Jan 18 21:47:42 symfony [info] {sfWebDebugLogger} Action "job/index" 15.73 ms (1)
+Jan 18 21:47:42 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 25.83 ms (1)
+Jan 18 21:47:42 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.44 ms (2)
+Jan 18 21:47:42 symfony [info] {sfWebResponse} Send content (48104 o)
+Jan 18 21:47:43 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jan 18 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:43 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:43 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43'
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:43 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43'
+Jan 18 21:47:43 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:43 symfony [info] {main} Get slot "title"
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Configuration 19.06 ms (9)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Factories 44.81 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Action "job/index" 29.56 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 42.85 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Partial "job/_list" 11.36 ms (2)
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send content (48293 o)
+Jan 18 21:47:43 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jan 18 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:43 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:43 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43'
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:43 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43'
+Jan 18 21:47:43 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:43 symfony [info] {main} Get slot "title"
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Configuration 11.11 ms (9)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Factories 25.97 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Action "job/index" 15.25 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 25.69 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Partial "job/_list" 5.98 ms (2)
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send content (48297 o)
+Jan 18 21:47:43 symfony [info] {sfPatternRouting} Match route "job" (/job.:sf_format) for /job with parameters array (  'module' => 'job',  'action' => 'index',  'sf_format' => 'html',)
+Jan 18 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:43 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:43 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43'
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:43 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:43 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:43'
+Jan 18 21:47:43 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:43 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:43 symfony [info] {main} Get slot "title"
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Configuration 8.31 ms (9)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Factories 34.33 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Action "job/index" 16.14 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 23.68 ms (1)
+Jan 18 21:47:43 symfony [info] {sfWebDebugLogger} Partial "job/_list" 6.43 ms (2)
+Jan 18 21:47:43 symfony [info] {sfWebResponse} Send content (48295 o)
+Jan 18 21:47:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:47:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:47:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:47:47 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:47:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:47:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:47:47' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:47:47 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:47:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:47' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:47 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:47'
+Jan 18 21:47:47 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:47' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:47:47 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:47:47 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:47:47'
+Jan 18 21:47:47 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:47 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:47:47 symfony [info] {main} Get slot "title"
+Jan 18 21:47:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:47:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:47 symfony [info] {sfWebDebugLogger} Configuration 7.02 ms (9)
+Jan 18 21:47:47 symfony [info] {sfWebDebugLogger} Factories 22.46 ms (1)
+Jan 18 21:47:47 symfony [info] {sfWebDebugLogger} Action "job/index" 22.63 ms (1)
+Jan 18 21:47:47 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 26.05 ms (1)
+Jan 18 21:47:47 symfony [info] {sfWebDebugLogger} Partial "job/_list" 7.55 ms (2)
+Jan 18 21:47:47 symfony [info] {sfWebResponse} Send content (48139 o)
+Jan 18 21:47:51 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category" (/).
+Jan 18 21:47:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:47:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:51 symfony [info] {sfWebDebugLogger} Configuration 3.81 ms (5)
+Jan 18 21:47:51 symfony [info] {sfWebDebugLogger} Factories 21.12 ms (1)
+Jan 18 21:47:55 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category/" (/).
+Jan 18 21:47:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:47:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:47:55 symfony [info] {sfWebDebugLogger} Configuration 3.72 ms (5)
+Jan 18 21:47:55 symfony [info] {sfWebDebugLogger} Factories 18.67 ms (1)
+Jan 18 21:55:33 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category/" (/).
+Jan 18 21:55:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:55:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:55:33 symfony [info] {sfWebDebugLogger} Configuration 6.76 ms (5)
+Jan 18 21:55:33 symfony [info] {sfWebDebugLogger} Factories 38.49 ms (1)
+Jan 18 21:55:33 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/category/" (/).
+Jan 18 21:55:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 18 21:55:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:55:33 symfony [info] {sfWebDebugLogger} Configuration 7.85 ms (5)
+Jan 18 21:55:33 symfony [info] {sfWebDebugLogger} Factories 35.18 ms (1)
+Jan 18 21:56:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:56:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:56:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:56:32 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:56:32 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:56:32 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32'
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:56:32 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32'
+Jan 18 21:56:32 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:56:32 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:56:32 symfony [info] {main} Get slot "title"
+Jan 18 21:56:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:56:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Configuration 9.56 ms (9)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Factories 26.28 ms (1)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Action "job/index" 20.32 ms (1)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 40.87 ms (1)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Partial "job/_list" 12.01 ms (2)
+Jan 18 21:56:32 symfony [info] {sfWebResponse} Send content (48073 o)
+Jan 18 21:56:32 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'job',  'action' => 'index',)
+Jan 18 21:56:32 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 18 21:56:32 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 18 21:56:32 symfony [info] {jobActions} Call "jobActions->executeIndex()"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.000 sec | slow:  NO | mem:    3.5 MB | mempeak:    3.5 MB | memdelta:      0.0 B | SET NAMES 'utf8'
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    3.8 MB | mempeak:    3.8 MB | memdelta:      0.0 B | SELECT DISTINCT  jobeet_category.ID, jobeet_category.NAME, jobeet_category.SLUG FROM `jobeet_category`, `jobeet_job` WHERE jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32' AND jobeet_category.ID=jobeet_job.CATEGORY_ID
+Jan 18 21:56:32 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/indexSuccess.php"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.3 MB | mempeak:    4.3 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:56:32 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=1 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32'
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT jobeet_job.ID, jobeet_job.CATEGORY_ID, jobeet_job.TYPE, jobeet_job.COMPANY, jobeet_job.LOGO, jobeet_job.URL, jobeet_job.POSITION, jobeet_job.LOCATION, jobeet_job.DESCRIPTION, jobeet_job.HOW_TO_APPLY, jobeet_job.TOKEN, jobeet_job.IS_PUBLIC, jobeet_job.IS_ACTIVATED, jobeet_job.EMAIL, jobeet_job.EXPIRES_AT, jobeet_job.CREATED_AT, jobeet_job.UPDATED_AT FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32' ORDER BY jobeet_job.CREATED_AT DESC LIMIT 10
+Jan 18 21:56:32 symfony [info] {sfPartialView} Render "C:\PhpstormProjects\jobeet\apps\frontend\modules/job/templates/_list.php"
+Jan 18 21:56:32 symfony [debug] {sfPropelLogger} time:  0.001 sec | slow:  NO | mem:    4.5 MB | mempeak:    4.5 MB | memdelta:      0.0 B | SELECT COUNT(*) FROM `jobeet_job` WHERE jobeet_job.CATEGORY_ID=2 AND jobeet_job.EXPIRES_AT>'2018-01-18 21:56:32'
+Jan 18 21:56:32 symfony [info] {sfPHPView} Decorate content with "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:56:32 symfony [info] {sfPHPView} Render "C:\PhpstormProjects\jobeet\apps\frontend\templates/layout.php"
+Jan 18 21:56:32 symfony [info] {main} Get slot "title"
+Jan 18 21:56:32 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 18 21:56:32 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Configuration 8.08 ms (9)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Factories 23.44 ms (1)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Action "job/index" 18.20 ms (1)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} View "Success" for "job/index" 48.48 ms (1)
+Jan 18 21:56:32 symfony [info] {sfWebDebugLogger} Partial "job/_list" 12.57 ms (2)
+Jan 18 21:56:32 symfony [info] {sfWebResponse} Send content (48073 o)
