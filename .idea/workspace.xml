@@ -14,8 +14,8 @@
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/frontend/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="350">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,7 +123,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="php bin/console cache:clear" />
       <command text="php symfony app:routes frontend" />
       <command text="php symfony app:routes frontend job_edit" />
       <command text="cd" />
@@ -148,6 +147,7 @@
       <command text="php symfony propel:build--all" />
       <command text="php symfony propel:build --all" />
       <command text="php symfony propel:build --all --and-load --no-confirmation" />
+      <command text="wget" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -174,7 +174,6 @@
         <option value="$PROJECT_DIR$/lib/model/JobeetCategoryPeer.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/job/actions/actions.class.php" />
         <option value="$PROJECT_DIR$/lib/vendor/symfony/lib/util/sfInflector.class.php" />
-        <option value="$PROJECT_DIR$/apps/frontend/config/routing.yml" />
         <option value="$PROJECT_DIR$/lib/model/JobeetJobPeer.php" />
         <option value="$PROJECT_DIR$/data/fixtures/020_jobs.yml" />
         <option value="$PROJECT_DIR$/config/schema.yml" />
@@ -185,6 +184,7 @@
         <option value="$PROJECT_DIR$/lib/model/JobeetCategory.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/category/templates/showSuccess.php" />
         <option value="$PROJECT_DIR$/apps/frontend/modules/category/actions/actions.class.php" />
+        <option value="$PROJECT_DIR$/apps/frontend/config/routing.yml" />
       </list>
     </option>
   </component>
@@ -277,7 +277,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="last_opened_file_path" value="C:/xampp/php/php.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Julian Castro" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="SearchEverywhereHistoryKey" value="getActivej&#9;null&#9;null&#10;getActiveJ&#9;null&#9;null&#10;actions&#9;FILE&#9;file://C:/PhpstormProjects/jobeet/apps/frontend/modules/job/actions/actions.class.php&#10;indexSu&#9;FILE&#9;file://C:/PhpstormProjects/jobeet/apps/frontend/modules/job/templates/indexSuccess.php&#10;INDE&#9;FILE&#9;file://C:/PhpstormProjects/jobeet/apps/frontend/modules/job/templates/indexSuccess.php&#10;jobact&#9;FILE&#9;file://C:/PhpstormProjects/jobeet/test/functional/frontend/jobActionsTest.php" />
@@ -304,7 +304,7 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Julian Castro Ruge\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -318,12 +318,12 @@
       <workItem from="1516220986755" duration="8248000" />
       <workItem from="1516280851282" duration="10000000" />
       <workItem from="1516291499163" duration="2754000" />
-      <workItem from="1516294669275" duration="11790000" />
+      <workItem from="1516294669275" duration="14908000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40679000" />
+    <option name="totallyTimeSpent" value="43797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -331,7 +331,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15825687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2798165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -747,8 +747,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/frontend/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        <state relative-caret-position="350">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
