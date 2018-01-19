@@ -18,7 +18,7 @@ CREATE TABLE `jobeet_category`
 	PRIMARY KEY (`id`),
 	UNIQUE KEY `jobeet_category_U_1` (`name`),
 	UNIQUE KEY `jobeet_category_U_2` (`slug`)
-)Engine=InnoDB;
+)Type=InnoDB;
 
 #-----------------------------------------------------------------------------
 #-- jobeet_job
@@ -52,8 +52,7 @@ CREATE TABLE `jobeet_job`
 	CONSTRAINT `jobeet_job_FK_1`
 		FOREIGN KEY (`category_id`)
 		REFERENCES `jobeet_category` (`id`)
-		ON DELETE CASCADE
-)Engine=InnoDB;
+)Type=InnoDB;
 
 #-----------------------------------------------------------------------------
 #-- jobeet_affiliate
@@ -72,7 +71,7 @@ CREATE TABLE `jobeet_affiliate`
 	`created_at` DATETIME,
 	PRIMARY KEY (`id`),
 	UNIQUE KEY `jobeet_affiliate_U_1` (`email`)
-)Engine=InnoDB;
+)Type=InnoDB;
 
 #-----------------------------------------------------------------------------
 #-- jobeet_category_affiliate
@@ -95,7 +94,7 @@ CREATE TABLE `jobeet_category_affiliate`
 		FOREIGN KEY (`affiliate_id`)
 		REFERENCES `jobeet_affiliate` (`id`)
 		ON DELETE CASCADE
-)Engine=InnoDB;
+)Type=InnoDB;
 
 # This restores the fkey checks, after having unset them earlier
 SET FOREIGN_KEY_CHECKS = 1;

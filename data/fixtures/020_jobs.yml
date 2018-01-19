@@ -1,70 +1,18 @@
-#data/fixtures/020_jobs.yml
-
 JobeetJob:
-# Starts at the beginning of the line (no whitespace before)
-<?php for ($i = 100; $i <= 120; $i++): ?>
-  job_<?php echo $i ?>:
-    category_id:  programming
-    company:      Company <?php echo $i."\n" ?>
-    position:     Web Developer
-    location:     Paris, France
-    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    how_to_apply: |
-      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
-    is_public:    true
-    is_activated: true
-    token:        job_<?php echo $i."\n" ?>
-    email:        job@example.com
-    logo:         imagenPrueba.jpg
-
-<?php endfor ?>
-
-<?php for ($i = 100; $i <= 115; $i++): ?>
-  job_<?php echo $i ?>:
-    category_id:  design
-    company:      Company <?php echo $i."\n" ?>
-    position:     Skills in Photoshop
-    location:     Paris, France
-    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    how_to_apply: |
-      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
-    is_public:    true
-    is_activated: true
-    token:        job_<?php echo $i."\n" ?>
-    email:        job@example.com
-    logo:         imagenPrueba.jpg
-
-<?php endfor ?>
-  #Other
-  expired_job:
-    category_id:  programming
-    company:      Sensio Labs
-    position:     Web Developer
-    location:     Paris, France
-    description:  |
-          Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit.
-    how_to_apply: Send your resume to lorem.ipsum [at] dolor.sit
-    is_public:    true
-    is_activated: true
-    created_at:   2005-12-01
-    token:        job_expired
-    email:        job@example.com
-
   job_sensio_labs:
     category_id:  programming
     type:         full-time
     company:      Sensio Labs
-    logo:         images.jpg
+    logo:         sensio-labs.gif
     url:          http://www.sensiolabs.com/
     position:     Web Developer
     location:     Paris, France
     description:  |
-      You've already developed websites with symfony and you want to
-      work with Open-Source technologies. You have a minimum of 3
-      years experience in web development with PHP or Java and you
-      wish to participate to development of Web 2.0 sites using the
-      best frameworks available.
+      You've already developed websites with symfony and you want to work
+      with Open-Source technologies. You have a minimum of 3 years
+      experience in web development with PHP or Java and you wish to
+      participate to development of Web 2.0 sites using the best
+      frameworks available.
     how_to_apply: |
       Send your resume to fabien.potencier [at] sensio.com
     is_public:    true
@@ -77,7 +25,7 @@ JobeetJob:
     category_id:  design
     type:         part-time
     company:      Extreme Sensio
-    logo:         imagenPrueba.jpg
+    logo:         extreme-sensio.gif
     url:          http://www.extreme-sensio.com/
     position:     Web Designer
     location:     Paris, France
@@ -98,3 +46,32 @@ JobeetJob:
     token:        job_extreme_sensio
     email:        job@example.com
     expires_at:   2010-10-10
+
+  expired_job:
+    category_id:  programming
+    company:      Sensio Labs
+    position:     Web Developer
+    location:     Paris, France
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    how_to_apply: Send your resume to lorem.ipsum [at] dolor.sit
+    is_public:    true
+    is_activated: true
+    expires_at:   2005-12-01
+    token:        job_expired
+    email:        job@example.com
+
+<?php for ($i = 100; $i <= 130; $i++): ?>
+  job_<?php echo $i ?>:
+    category_id:  programming
+    company:      Company <?php echo $i."\n" ?>
+    position:     Web Developer
+    location:     Paris, France
+    description:  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    how_to_apply: |
+      Send your resume to lorem.ipsum [at] company_<?php echo $i ?>.sit
+    is_public:    true
+    is_activated: true
+    token:        job_<?php echo $i."\n" ?>
+    email:        job@example.com
+
+<?php endfor; ?>

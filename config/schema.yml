@@ -1,4 +1,3 @@
-# config/schema.yml
 propel:
   jobeet_category:
     id:           ~
@@ -7,7 +6,7 @@ propel:
 
   jobeet_job:
     id:           ~
-    category_id:  { type: integer, foreignTable: jobeet_category, foreignReference: id, required: true, onDelete: CASCADE }
+    category_id:  { type: integer, foreignTable: jobeet_category, foreignReference: id, required: true }
     type:         { type: varchar(255) }
     company:      { type: varchar(255), required: true }
     logo:         { type: varchar(255) }
