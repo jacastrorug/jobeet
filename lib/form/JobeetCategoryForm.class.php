@@ -10,11 +10,9 @@
  */
 class JobeetCategoryForm extends BaseJobeetCategoryForm
 {
-  public function configure()
-  {
+
     public function configure()
     {
       unset($this['jobeet_category_affiliate_list']);
     }
-  }
 }
